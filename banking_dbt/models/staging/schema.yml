@@ -1,0 +1,30 @@
+version: 2
+
+sources:
+  - name: staging
+    database: AwsDataCatalog
+    schema: banking-mini_staging_db
+    tables:
+      - name: customers
+      - name: accounts
+      - name: transactions
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: [not_null, unique]
+
+  - name: stg_accounts
+    columns:
+      - name: account_id
+        tests: [not_null, unique]
+      - name: customer_id
+        tests: [not_null]
+
+  - name: stg_transactions
+    columns:
+      - name: transaction_id
+        tests: [not_null, unique]
+      - name: account_id
+        tests: [not_null]
