@@ -1,4 +1,4 @@
-Use an AI assisted workflow to build the platform and deploy it in the next 2 days.
+Used an AI assisted workflow to build the platform and deploy it in the next 2 days.
 
 For any AI produced code, make sure you can explain it. Take some time to understand whatever is produced.
 
