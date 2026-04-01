@@ -1,17 +1,18 @@
-
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
-crash.*.log
-.terraform.lock.hcl
-
-# Terraform
-.terraform/
-*.tfstate
-*.tfstate.*
-crash.log
-crash.*.log
-.terraform.lock.hcl
+# Python
 .venv/
+__pycache__/
+*.pyc
+
+# dbt
+logs/
+target/
+dbt_packages/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfstate.lock.info
+crash.log
+.terraform.lock.hcl
